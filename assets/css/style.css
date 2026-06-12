@@ -198,6 +198,12 @@ nav a{
     margin-top:10px;
 }
 
+.cta .container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
 footer{
     background:#0d1c6b;
     color:white;
