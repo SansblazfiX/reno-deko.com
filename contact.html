@@ -71,21 +71,46 @@
 
     </div>
 
-    <form>
+    <form
+    name="contact"
+    method="POST"
+    data-netlify="true"
+>
 
-    <input type="text" placeholder="Nom">
+    <input
+    type="hidden"
+    name="form-name"
+    value="contact">
 
-    <input type="email" placeholder="Email">
+    <input
+    type="text"
+    name="nom"
+    placeholder="Votre nom"
+    required>
 
-    <input type="tel" placeholder="Téléphone">
+    <input
+    type="email"
+    name="email"
+    placeholder="Votre email"
+    required>
 
-    <textarea placeholder="Votre message"></textarea>
+    <input
+    type="tel"
+    name="telephone"
+    placeholder="Votre téléphone">
 
-    <button type="submit" class="btn-primary">
-    Envoyer
+    <textarea
+    name="message"
+    placeholder="Votre message"
+    required></textarea>
+
+    <button
+    type="submit"
+    class="btn-primary">
+        Envoyer
     </button>
 
-    </form>
+</form>
 
     </div>
 
