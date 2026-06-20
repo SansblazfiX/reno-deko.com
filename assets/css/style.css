@@ -198,12 +198,6 @@ nav a{
     margin-top:10px;
 }
 
-.cta .container{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
 footer{
     background:#0d1c6b;
     color:white;
@@ -232,6 +226,35 @@ nav{
 display:none;
 }
 
+.burger{
+display:block;
+font-size:28px;
+cursor:pointer;
+color:var(--blue);
+}
+
+nav.active{
+display:flex;
+position:absolute;
+top:100%;
+left:0;
+right:0;
+background:white;
+flex-direction:column;
+padding:20px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+z-index:100;
+}
+
+nav.active ul{
+flex-direction:column;
+gap:20px;
+}
+
+header{
+position:relative;
+}
+
 .advantages-grid{
 grid-template-columns:1fr 1fr;
 gap:30px;
@@ -240,4 +263,8 @@ gap:30px;
 .footer-grid{
 grid-template-columns:1fr;
 }
+}
+
+.burger{
+display:none;
 }
