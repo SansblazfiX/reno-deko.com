@@ -1,4 +1,30 @@
 // ===========================
+// DIAPORAMA HERO
+// ===========================
+
+const heroBgs = document.querySelectorAll(".hero-bg");
+
+if (heroBgs.length > 0) {
+    let current = 0;
+
+    // Active la première image immédiatement
+    heroBgs[current].classList.add("active");
+
+    setInterval(() => {
+        // Retire l'active de l'image courante
+        heroBgs[current].classList.remove("active");
+
+        // Passe à la suivante (boucle)
+        current = (current + 1) % heroBgs.length;
+
+        // Active la nouvelle image
+        heroBgs[current].classList.add("active");
+
+    }, 5000); // 3s affichage + 2s fondu = 5s par image
+}
+
+
+// ===========================
 // MENU MOBILE
 // ===========================
 
